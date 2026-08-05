@@ -1,0 +1,16 @@
+[package]
+org = "zed-pkg-test"
+name = "first-install-manifest"
+version = "0.1.0"
+description = "Independent package acceptance harness"
+license = "MIT"
+
+[package.repository]
+vcs = "git"
+url = "https://github.com/zed-pkg-test/first-install-manifest"
+
+[install]
+dir = ".vendor/.zed"
+
+[publish]
+exclude = ["artifacts/**", "vendor/**", ".vendor/**", ".env", ".env.*"]
